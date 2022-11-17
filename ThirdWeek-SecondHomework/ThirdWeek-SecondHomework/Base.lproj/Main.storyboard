@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ARQ-mt-NEM">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ThirdWeek_SecondHomework" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hayvanat Bahçesi İsmi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdO-SF-xTG">
+                                <rect key="frame" x="20" y="131" width="350" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bütçe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KYc-MN-Lou">
+                                <rect key="frame" x="20" y="201" width="350" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Su Limiti" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H9i-Wu-9M5">
+                                <rect key="frame" x="20" y="271" width="350" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Lütfen miktarı giriniz:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zTZ-eO-Xmh">
+                                <rect key="frame" x="20" y="341" width="350" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iGA-Me-rNX">
+                                <rect key="frame" x="40.000000000000007" y="415" width="101.66666666666669" height="37"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Para Ekle">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="19"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="addMoney:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wye-Bw-nvR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pwh-2S-vyW">
+                                <rect key="frame" x="240" y="415" width="110" height="37"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Para Çıkar">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="19"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="subtractMoney:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NQN-7O-Po4"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Su Miktarı:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EUB-Ym-Rhe">
+                                <rect key="frame" x="23.999999999999986" y="486" width="217.66666666666663" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kWU-Gl-hGs">
+                                <rect key="frame" x="249.66666666666666" y="486" width="86.333333333333343" height="37"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Su Ekle">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="19"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="addWater:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0yf-kA-DdR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a65-rD-IuN">
+                                <rect key="frame" x="100" y="560" width="205" height="37"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Bakıcı Maaşlarını Öde">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="19"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="payAllKeepersMoney:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UZ3-EN-dDY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8d-3p-kE8">
+                                <rect key="frame" x="34" y="652" width="115" height="37"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Bakıcı Ekle">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="19"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="addNewKeeper:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IZJ-Sl-0j5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zkQ-d3-0yn">
+                                <rect key="frame" x="232" y="652" width="127" height="37"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Hayvan Ekle">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="19"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="addNewAnimal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ufC-AZ-Fe6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vDf-XY-hiF">
+                                <rect key="frame" x="70" y="729" width="251" height="37"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Bakıcı ve Hayvanları Listele">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="19"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="showZooAndKeeper:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SuM-c2-ieA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="c8d-3p-kE8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="34" id="0Wr-ds-g5E"/>
+                            <constraint firstItem="pdO-SF-xTG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="2rx-oV-RWF"/>
+                            <constraint firstItem="KYc-MN-Lou" firstAttribute="top" secondItem="pdO-SF-xTG" secondAttribute="bottom" constant="40" id="4cc-pC-nNj"/>
+                            <constraint firstItem="pdO-SF-xTG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="4ub-Q6-7Ey"/>
+                            <constraint firstItem="iGA-Me-rNX" firstAttribute="top" secondItem="zTZ-eO-Xmh" secondAttribute="bottom" constant="40" id="7Jg-X7-qUF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zTZ-eO-Xmh" secondAttribute="trailing" constant="20" id="7oA-mD-Vm1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pdO-SF-xTG" secondAttribute="trailing" constant="20" id="9OA-PG-ESh"/>
+                            <constraint firstItem="zkQ-d3-0yn" firstAttribute="top" secondItem="a65-rD-IuN" secondAttribute="bottom" constant="55" id="9x9-E0-gsB"/>
+                            <constraint firstItem="H9i-Wu-9M5" firstAttribute="top" secondItem="KYc-MN-Lou" secondAttribute="bottom" constant="40" id="A3h-PK-EiA"/>
+                            <constraint firstItem="a65-rD-IuN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="EiF-Yl-CuT"/>
+                            <constraint firstItem="vDf-XY-hiF" firstAttribute="top" secondItem="c8d-3p-kE8" secondAttribute="bottom" constant="40" id="Es2-rt-pFj"/>
+                            <constraint firstItem="kWU-Gl-hGs" firstAttribute="leading" secondItem="EUB-Ym-Rhe" secondAttribute="trailing" constant="8" symbolic="YES" id="F0T-S7-bjJ"/>
+                            <constraint firstItem="iGA-Me-rNX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="HZk-4E-u2u"/>
+                            <constraint firstItem="a65-rD-IuN" firstAttribute="top" secondItem="EUB-Ym-Rhe" secondAttribute="bottom" constant="40" id="NLO-m5-Inc"/>
+                            <constraint firstItem="KYc-MN-Lou" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="P3A-wE-b8A"/>
+                            <constraint firstItem="EUB-Ym-Rhe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="UwO-FE-1Ym"/>
+                            <constraint firstItem="vDf-XY-hiF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="VJ4-tE-Aar"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zkQ-d3-0yn" secondAttribute="trailing" constant="31" id="X3c-rH-7mD"/>
+                            <constraint firstItem="H9i-Wu-9M5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Xm0-pl-9Q1"/>
+                            <constraint firstItem="zTZ-eO-Xmh" firstAttribute="top" secondItem="H9i-Wu-9M5" secondAttribute="bottom" constant="40" id="Xoo-gA-ceK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Pwh-2S-vyW" secondAttribute="trailing" constant="40" id="d7k-I6-89c"/>
+                            <constraint firstItem="kWU-Gl-hGs" firstAttribute="top" secondItem="Pwh-2S-vyW" secondAttribute="bottom" constant="34" id="eQV-eR-61S"/>
+                            <constraint firstItem="c8d-3p-kE8" firstAttribute="top" secondItem="a65-rD-IuN" secondAttribute="bottom" constant="55" id="ha0-lJ-ah4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="H9i-Wu-9M5" secondAttribute="trailing" constant="20" id="kuA-bt-gdh"/>
+                            <constraint firstItem="zTZ-eO-Xmh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="nJU-5W-3Xq"/>
+                            <constraint firstItem="EUB-Ym-Rhe" firstAttribute="top" secondItem="iGA-Me-rNX" secondAttribute="bottom" constant="34" id="pac-eK-ADZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KYc-MN-Lou" secondAttribute="trailing" constant="20" id="vI6-Nc-N0I"/>
+                            <constraint firstItem="Pwh-2S-vyW" firstAttribute="top" secondItem="zTZ-eO-Xmh" secondAttribute="bottom" constant="40" id="vh9-5p-k6i"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kWU-Gl-hGs" secondAttribute="trailing" constant="54" id="xJT-Bu-Snp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="X4C-Ym-zqw"/>
+                    <connections>
+                        <outlet property="addWaterTextField" destination="EUB-Ym-Rhe" id="aGA-vI-9D2"/>
+                        <outlet property="moneyTextField" destination="zTZ-eO-Xmh" id="Yva-G4-wmG"/>
+                        <outlet property="zooBudgetLabel" destination="KYc-MN-Lou" id="8k7-h0-LVF"/>
+                        <outlet property="zooNameLabel" destination="pdO-SF-xTG" id="xxS-1j-s4N"/>
+                        <outlet property="zooWaterLimitLabel" destination="H9i-Wu-9M5" id="eve-P8-ZOb"/>
+                        <segue destination="pOW-id-gOx" kind="show" identifier="AddNewAnimalViewController" id="6pU-JJ-CbK"/>
+                        <segue destination="JcP-nT-gba" kind="show" identifier="AnimalKeeperViewController" id="peU-Ap-WXZ"/>
+                        <segue destination="ryR-l3-NCC" kind="show" identifier="AnimalAndKeeperListViewController" id="EcQ-ud-zho"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="886.15384615384608" y="3.5545023696682461"/>
+        </scene>
+        <!--Animal And Keeper List View Controller-->
+        <scene sceneID="rtf-Gd-265">
+            <objects>
+                <viewController storyboardIdentifier="AnimalAndKeeperListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ryR-l3-NCC" customClass="AnimalAndKeeperListViewController" customModule="ThirdWeek_SecondHomework" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aZf-PX-1W0">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="kDw-2g-j1r"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nXW-Sq-4DG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bcp-XR-2MV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-14" y="936"/>
+        </scene>
+        <!--Animal Keeper View Controller-->
+        <scene sceneID="QAT-T3-7tu">
+            <objects>
+                <viewController storyboardIdentifier="AnimalKeeperViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="JcP-nT-gba" customClass="AnimalKeeperViewController" customModule="ThirdWeek_SecondHomework" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8cY-WV-7j3">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="sVr-SY-vRV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="r5k-7Z-yDb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ob7-g9-s73" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1646.1538461538462" y="384.59715639810423"/>
+        </scene>
+        <!--Add New Animal View Controller-->
+        <scene sceneID="wDF-YO-gsP">
+            <objects>
+                <viewController storyboardIdentifier="AddNewAnimalViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="pOW-id-gOx" customClass="AddNewAnimalViewController" customModule="ThirdWeek_SecondHomework" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Uxo-gZ-H9r">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="PJA-dI-KDF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bR0-Hf-ZpG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eQj-xt-YBJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1646.1538461538462" y="-335.54502369668245"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ffc-oa-CzW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ARQ-mt-NEM" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bot-Rg-8Xc">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="mRl-ff-uCR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xrS-PP-SD6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-43.076923076923073" y="3.5545023696682461"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
