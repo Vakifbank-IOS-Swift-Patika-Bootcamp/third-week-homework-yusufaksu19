@@ -16,7 +16,7 @@ class ViewController: UIViewController {
   @IBOutlet weak var addWaterTextField: UITextField!
 
 
-  let gaziantepZoo: Zoo = Zoo(zooName: "Gaziantep Hayvanat Bahçesi", louseBudget: 1_000_000, waterLimit: 5000)
+  var gaziantepZoo: Zoo = Zoo(zooName: "Gaziantep Hayvanat Bahçesi", louseBudget: 1_000_000, waterLimit: 5000)
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -32,10 +32,11 @@ class ViewController: UIViewController {
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     if segue.identifier == "AddNewAnimalViewController" {
       guard let vc = segue.destination as? AddNewAnimalViewController else { return }
-//      vc.appleCompany = appleCompany
+      vc.gaziantepZoo = gaziantepZoo
+   
     } else if segue.identifier == "AnimalKeeperViewController" {
       guard let vc = segue.destination as? AnimalKeeperViewController else { return }
-//      vc.employeesArray = appleCompany.employeeList
+      vc.gaziantepZoo = gaziantepZoo
     } else if segue.identifier == "AnimalAndKeeperListViewController" {
       guard let vc = segue.destination as? AnimalAndKeeperListViewController else { return }
       //      vc.employeesArray = appleCompany.employeeList
@@ -65,6 +66,8 @@ class ViewController: UIViewController {
   }
 
   @IBAction func payAllKeepersMoney(_ sender: Any) {
+    gaziantepZoo.payAllAnimalKeepersMoney()
+    zooBudgetLabel.text = "Bütçe: " + String(format: "%.1f", gaziantepZoo.louseBudget!)
   }
 
   @IBAction func addNewKeeper(_ sender: Any) {

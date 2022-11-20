@@ -8,22 +8,25 @@
 import UIKit
 
 class AnimalKeeperViewController: UIViewController {
+  var gaziantepZoo: Zoo?
 
-    override func viewDidLoad() {
+  @IBOutlet weak var keeperNameTextField: UITextField!
+
+  @IBOutlet weak var keeperWage: UILabel!
+
+
+  override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+  @IBAction func addNewKeeperButton(_ sender: Any) {
+    var newKeeper = AnimalKeeper(name: keeperNameTextField.text!, delegate: gaziantepZoo!)
+    keeperWage.text = String(format: "%1.f", newKeeper.income!)
+    keeperNameTextField.text = ""
+    gaziantepZoo?.addAnimalKeeperToList(keeper: newKeeper)
+  }
 
 }

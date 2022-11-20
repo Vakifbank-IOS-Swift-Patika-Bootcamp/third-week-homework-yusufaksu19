@@ -23,6 +23,7 @@ class Zoo: ZooWithAnimalDelegate {
   var willPayMoney: Double = 0.0
   var louseBudget: Double?
   var waterLimit: Double?
+  var animalKeeperList: [AnimalKeeper]?
 
   init(zooName:String, louseBudget: Double, waterLimit: Double) {
     self.zooName = zooName
@@ -107,10 +108,15 @@ class Zoo: ZooWithAnimalDelegate {
       print("--")
     }
     printSituationOfZoo()
+    willPayMoney = 0
   }
 
   func addWillPayMoney(money amount: Double){
     willPayMoney += amount
+  }
+
+  func addAnimalKeeperToList(keeper: AnimalKeeper){
+    animalKeeperList?.append(keeper)
   }
 
   func printSituationOfZoo(){

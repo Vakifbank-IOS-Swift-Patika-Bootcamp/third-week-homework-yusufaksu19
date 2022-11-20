@@ -19,6 +19,7 @@
 		8E2B0CF4292649B900649EC3 /* Zoo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B0CF3292649B900649EC3 /* Zoo.swift */; };
 		8E2B0CF6292649F800649EC3 /* AnimalKeeper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B0CF5292649F800649EC3 /* AnimalKeeper.swift */; };
 		8E2B0CF829264A4000649EC3 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B0CF729264A4000649EC3 /* Animal.swift */; };
+		8E7FF133292A8C250035EC3A /* KeeperTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7FF132292A8C240035EC3A /* KeeperTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		8E2B0CF3292649B900649EC3 /* Zoo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zoo.swift; sourceTree = "<group>"; };
 		8E2B0CF5292649F800649EC3 /* AnimalKeeper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalKeeper.swift; sourceTree = "<group>"; };
 		8E2B0CF729264A4000649EC3 /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		8E7FF132292A8C240035EC3A /* KeeperTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeeperTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				8E2B0CDB2926426000649EC3 /* SceneDelegate.swift */,
 				8E2B0CDD2926426000649EC3 /* ViewController.swift */,
 				8E2B0CDF2926426000649EC3 /* Main.storyboard */,
+				8E7FF132292A8C240035EC3A /* KeeperTableViewCell.swift */,
 				8E2B0CF3292649B900649EC3 /* Zoo.swift */,
 				8E2B0CF5292649F800649EC3 /* AnimalKeeper.swift */,
 				8E2B0CF729264A4000649EC3 /* Animal.swift */,
@@ -157,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E2B0CDE2926426000649EC3 /* ViewController.swift in Sources */,
+				8E7FF133292A8C250035EC3A /* KeeperTableViewCell.swift in Sources */,
 				8E2B0CDA2926426000649EC3 /* AppDelegate.swift in Sources */,
 				8E2B0CF4292649B900649EC3 /* Zoo.swift in Sources */,
 				8E2B0CF6292649F800649EC3 /* AnimalKeeper.swift in Sources */,
